@@ -100,12 +100,12 @@ public class Wingpanel.PanelWindow : Gtk.Window {
         Gdk.Rectangle monitor_dimensions;
         this.screen.get_monitor_geometry (monitor_number, out monitor_dimensions);
 
-        monitor_width = monitor_dimensions.width;
+        monitor_width = monitor_dimensions.width/2;
         monitor_height = monitor_dimensions.height;
 
         this.set_size_request (monitor_width, (popover_manager.current_indicator != null ? monitor_height : -1));
 
-        monitor_x = monitor_dimensions.x;
+        monitor_x = monitor_dimensions.x+950;
         monitor_y = monitor_dimensions.y;
 
         this.move (monitor_x, monitor_y - (panel_height + panel_displacement));

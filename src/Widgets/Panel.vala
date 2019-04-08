@@ -43,8 +43,8 @@ public class Wingpanel.Widgets.Panel : Gtk.EventBox {
         //  left_menubar.halign = Gtk.Align.START;
         //  box.pack_start (left_menubar);
 
-        center_menubar = new MenuBar ();
-        box.set_center_widget (center_menubar);
+        //  center_menubar = new MenuBar ();
+        //  box.set_center_widget (center_menubar);
 
         right_menubar = new IndicatorMenuBar ();
         right_menubar.halign = Gtk.Align.END;
